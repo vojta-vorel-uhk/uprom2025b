@@ -2,23 +2,19 @@ package uprom;
 
 import java.util.Scanner;
 
-public class Cviko06_Uloha02
+public class Cviko06_Uloha02b
 {
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int bound = 10;
-        while (true)
-        {
-            if(bound > n) {
-                System.out.println(
-                "Zadal jste číslo mezi "
-                + (bound/10) + " a "+bound);
-                break;
-            }
+        while (bound < n)
             bound = bound * 10;
-        }
+        System.out.println(
+                "Zadal jste číslo mezi "
+                        + (bound/10) + " a "+bound);
+
 
         // Z konzole načti přirozené číslo N
         // Podle toho, jak bylo velké, vypiš správnou hlášku, například:
