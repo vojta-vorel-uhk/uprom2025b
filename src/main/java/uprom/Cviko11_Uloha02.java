@@ -11,6 +11,11 @@ public class Cviko11_Uloha02
         //   - založí dvě pole typu int[], každé o délce 5
         //   - použije tato pole jako vstup do metody concat (ze třídy Cviko10_Uloha00)
         //     a vypíše délku pole, které se vrátilo jako výstup
-
+        int[] r = new int[5];
+        int[] s = /*new int[]*/{65,66,67,80,81};
+        int[] c = Cviko10_Uloha00.concat(r,s);
+        for(int i=0; i <c.length; i++){
+            System.out.println(c[i]);
+        }
     }
 }
